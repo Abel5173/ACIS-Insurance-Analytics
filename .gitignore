@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+
+# Data
+data/
+data/raw/*
+data/processed/*
+*.csv
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# DVC
+.dvc/cache/
