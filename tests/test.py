@@ -1,2 +1,2 @@
-def test():
-    print("Hello World!")
+def test_smoke():
+    assert True
