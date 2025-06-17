@@ -44,7 +44,7 @@ def analyze_regional_risk_profile(
     # Plot distribution
     plt.figure(figsize=(14, 8))
     if plot_type == 'violin':
-        sns.displot(data=data, x=group_var, y=value_var, inner='box', scale='width')
+        sns.violinplot(data=data, x=group_var, y=value_var, inner='box', scale='width')
     else:
         sns.lineplot(data=data, x=group_var, y=value_var)
     plt.title(f'{value_var} by {group_var}')

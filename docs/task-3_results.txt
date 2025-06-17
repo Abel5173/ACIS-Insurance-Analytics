@@ -1,0 +1,10 @@
+ANOVA (Province): statistic = 5.0486, p-value = 0.0000
+ANOVA (Province): statistic = 5.0486, p-value = 0.0000
+ANOVA (Province): statistic = 5.0486, p-value = 0.0000
+T-test (Male vs Female): statistic = -0.2765, p-value = 0.7822
+ANOVA (Province): statistic = 5.0486, p-value = 0.0000
+T-test (Male vs Female): statistic = -0.2765, p-value = 0.7822
+Two-Way ANOVA (Coverage × VehicleType): p-value = 0.0000
+ANOVA (Province): statistic = 5.0486, p-value = 0.0000
+T-test (Male vs Female): statistic = -0.2765, p-value = 0.7822
+Two-Way ANOVA (Coverage × VehicleType): p-value = 0.0000
