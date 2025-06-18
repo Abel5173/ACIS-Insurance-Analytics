@@ -6,6 +6,7 @@ from itertools import combinations
 from scipy import stats
 import os
 
+
 def analyze_vehicle_make_claims(
     df,
     min_count=100,
@@ -57,13 +58,16 @@ def analyze_vehicle_make_claims(
 
     plt.figure(figsize=(14, 8))
     if plot_type == 'violin':
-        sns.violinplot(data=subset, x=group_var, y=value_var, inner='box', scale='width')
+         sns.violinplot(
+             data=subset, x=group_var, y=value_var, inner='box', scale='width'
+         )
     else:
         sns.boxplot(data=subset, x=group_var, y=value_var)
     plt.title(f'{value_var} Distribution by {group_var} (Top {top_n_plot})')
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plot_path = os.path.join(output_dir, f'{group_var.lower()}_{value_var.lower()}_distribution.png')
+    plot_name = f'{group_var.lower()}_{value_var.lower()}_distribution.png'
+    plot_path = os.path.join(output_dir, plot_name)
     plt.savefig(plot_path)
     plt.show()
     plt.close()
