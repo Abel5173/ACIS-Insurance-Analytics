@@ -7,9 +7,11 @@ __pycache__/
 # data/processed/*
 *.csv
 .venv/
+venv/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
 
 # DVC
 .dvc/cache/
+
